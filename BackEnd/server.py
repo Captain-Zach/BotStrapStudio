@@ -4,10 +4,13 @@ import os
 from aiohttp import web
 import aiohttp
 import aiohttp.web_ws
+import dotenv
 
-# Paths to SSL certificate and key (replace with your actual paths)
-SSL_CERT_PATH = os.environ.get('SSL_CERT_PATH', 'cert.pem')
-SSL_KEY_PATH = os.environ.get('SSL_KEY_PATH', 'key.pem')
+dotenv.load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
+
+# Paths to SSL certificate and key (now loaded from .env file)
+SSL_CERT_PATH = os.environ.get('SSL_CERT_PATH', 'domain.cert.pem')
+SSL_KEY_PATH = os.environ.get('SSL_KEY_PATH', 'private.key.pem')
 
 routes = web.RouteTableDef()
 

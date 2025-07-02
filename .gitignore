@@ -76,3 +76,8 @@ DerivedDataCache/*
 
 # Python virtual environment
 .venv/
+
+# Environment files
+.env
+# Ignore certificate and key files
+*.pem
