@@ -1,0 +1,72 @@
+body {
+    background-color: #181a1b;
+    color: #e8e6e3;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #23272a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #2c2f33;
+    color: #e8e6e3;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #7289da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #5b6eae;
+}
+
+.game-list {
+    list-style: none;
+    padding: 0;
+}
+
+.game-list li {
+    background: #2c2f33;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.game-list li:hover {
+    background: #7289da;
+    color: #fff;
+}
