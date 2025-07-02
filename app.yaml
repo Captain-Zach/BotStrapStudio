@@ -1,0 +1,10 @@
+runtime: python39
+handlers:
+  - url: /
+    static_files: FrontEnd/login.html
+    upload: FrontEnd/login.html
+    secure: always
+  - url: /(.*)
+    static_files: FrontEnd/\1
+    upload: FrontEnd/(.*)
+    secure: always
