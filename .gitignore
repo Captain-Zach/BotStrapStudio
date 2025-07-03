@@ -77,6 +77,12 @@ DerivedDataCache/*
 # Python virtual environment
 .venv/
 
+# Ignore all files in Models/ but not the folder itself
+*/Models/*
+Models/*
+!Models/.gitkeep
+!*/Models/.gitkeep
+
 # Environment files
 .env
 # Ignore certificate and key files
