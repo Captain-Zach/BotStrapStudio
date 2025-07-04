@@ -16,4 +16,8 @@
 # Python pycache:
 __pycache__/
 # Ignored by the build system
+
 /setup.cfg
+AIClient\Models\gemma-3n-E2B-it-Q8_0.gguf
+
+*.gguf

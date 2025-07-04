@@ -63,6 +63,16 @@ def main():
             expose_headers="*",
             allow_headers="*",
         ),
+        "https://hypergenesis.one": aiohttp_cors.ResourceOptions(
+            allow_credentials=True,
+            expose_headers="*",
+            allow_headers="*",
+        ),
+        "https://www.hypergenesis.one": aiohttp_cors.ResourceOptions(
+            allow_credentials=True,
+            expose_headers="*",
+            allow_headers="*",
+        ),
         "*": aiohttp_cors.ResourceOptions()
     })
     for route in list(app.router.routes()):
